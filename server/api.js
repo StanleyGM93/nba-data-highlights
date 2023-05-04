@@ -4,10 +4,12 @@ require("dotenv").config();
 const app = express();
 
 const seasonRouter = require("./routes/season");
+const standingsRouter = require("./routes/standings");
 
 app.use(cors());
 
 app.use("/seasons", seasonRouter);
+app.use("/standings", standingsRouter);
 
 // Headers for API request
 // const ApiKey = process.env.X_RAPIDAPI_KEY;

@@ -2,7 +2,7 @@ const express = require("express");
 const seasonRouter = express.Router();
 const axios = require("axios");
 
-const options = {
+const seasonsRequest = {
 	method: "GET",
 	url: "https://api-nba-v1.p.rapidapi.com/seasons",
 	headers: {
@@ -13,7 +13,7 @@ const options = {
 
 seasonRouter.get("/", async (req, res) => {
 	try {
-		const response = await axios.request(options);
+		const response = await axios.request(seasonsRequest);
 		console.log(response.data);
 		res.send(response.data);
 	} catch (error) {
