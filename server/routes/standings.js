@@ -7,6 +7,7 @@ const standingsRequest = {
 	url: "https://api-nba-v1.p.rapidapi.com/standings",
 	params: {
 		league: "standard",
+		// Need to change the season to a request param
 		season: "2021",
 	},
 	headers: {

@@ -1,4 +1,13 @@
-# Getting Started with Create React App
+# NBA Data Highlights
+
+This project is utilising an API from [RapidAPI](https://rapidapi.com) to show historic NBA data. This project utilises React for the frontend and NodeJS/Express for the backend.
+
+## Set up
+
+1. Clone or fork the repository
+1. Move into the server directory `cd server`
+1. Run the backend server `node api.js`
+1. In a seperate terminal window run the frontend `npm start`
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
